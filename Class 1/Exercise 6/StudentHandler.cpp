@@ -50,7 +50,8 @@ void StudentHandler::show_student(Student student){
         cout << "Student Name: " << students[studentIndex].getName() << endl;
         cout << "Student ID: " << students[studentIndex].getID() << endl;
         cout << "Student grade 1: " << students[studentIndex].getGrade(0) << endl;
-        cout << "Student grade 2: " << students[studentIndex].getGrade(1) << endl << endl;
+        cout << "Student grade 2: " << students[studentIndex].getGrade(1) << endl;
+        cout << "Student Final grade: " << mean_calculation(students[studentIndex]) << endl << endl;
     }
 }
 
@@ -60,7 +61,8 @@ void StudentHandler::list_students(void){
         cout << "Student Name: " << students[i].getName() << endl;
         cout << "Student ID: " << students[i].getID() << endl;
         cout << "Student grade 1: " << students[i].getGrade(0) << endl;
-        cout << "Student grade 2: " << students[i].getGrade(1) << endl << endl << endl;
+        cout << "Student grade 2: " << students[i].getGrade(1) << endl;
+        cout << "Student final grade: " << mean_calculation(students[i]) << endl << endl;
         i++;
     }
 }
@@ -103,4 +105,8 @@ bool StudentHandler::update_student(string name, float grades[NUM_GRADES]){
         return true;
     }
     else return false;
+}
+
+float StudentHandler::mean_calculation(Student student){
+    return (student.getGrade(0) + student.getGrade(1))/2;
 }
