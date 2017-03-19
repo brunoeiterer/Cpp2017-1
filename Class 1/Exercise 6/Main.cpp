@@ -55,11 +55,10 @@ int main()
             getline(cin, aux_name);
             inputStudent.setName(aux_name);
             studentHandler.show_student(inputStudent);
-
             break;
 
             case 3:
-//            studentHandler.list_students();
+            studentHandler.list_students();
             break;
 
         }

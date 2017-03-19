@@ -54,3 +54,14 @@ void StudentHandler::show_student(Student student){
         cout << "Student grade 2: " << students[studentIndex].getGrade(1) << endl << endl;
     }
 }
+
+void StudentHandler::list_students(void){
+    int i = 0;
+    while(students[i].getName() != "empty" && i < NUM_STUDENTS){
+        cout << "Student Name: " << students[i].getName() << endl;
+        cout << "Student ID: " << students[i].getID() << endl;
+        cout << "Student grade 1: " << students[i].getGrade(0) << endl;
+        cout << "Student grade 2: " << students[i].getGrade(1) << endl << endl << endl;
+        i++;
+    }
+}
