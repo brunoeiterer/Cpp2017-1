@@ -69,6 +69,19 @@ int main()
             studentHandler.remove_student(inputStudent);
             break;
 
+            case 5:
+            cout << "Enter student name: ";
+            getline(cin, aux_name);
+            cout << "Enter grade 1: ";
+            cin >> aux_grades[0];
+            cout << "Enter grade 2: ";
+            cin >> aux_grades[1];
+            studentHandler.update_student(aux_name,aux_grades);
+            cout << endl;
+            break;
+
+            default:
+            break;
         }
     }
     return 0;

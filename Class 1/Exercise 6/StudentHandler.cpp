@@ -87,3 +87,20 @@ bool StudentHandler::remove_student(Student student){
         return false;
     }
 }
+
+bool StudentHandler::update_student(string name, float grades[NUM_GRADES]){
+    int studentMatchIndex;
+    bool studentMatchFlag;
+    for(int i = 0; i < NUM_STUDENTS; i++){
+        if(students[i].getName() == name) {
+        studentMatchFlag = true;
+        studentMatchIndex = i;
+        }
+    }
+    if(studentMatchFlag == true)
+    {
+        students[studentMatchIndex].setGrades(grades);
+        return true;
+    }
+    else return false;
+}
