@@ -46,7 +46,7 @@ int main()
             cin.ignore();
             inputStudent.setGrades(aux_grades);
 
-            studentHandler.register_student(inputStudent);
+            cout << studentHandler.register_student(inputStudent);
 
             break;
 
@@ -54,7 +54,7 @@ int main()
             cout << "Enter student name: ";
             getline(cin, aux_name);
             inputStudent.setName(aux_name);
-//            studentHandler.show_student(inputStudent);
+            studentHandler.show_student(inputStudent);
 
             break;
 
