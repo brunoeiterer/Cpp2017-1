@@ -25,6 +25,7 @@ int main()
 
         cin >> operation;
         cin.ignore();
+        cout << endl;
 
         switch (operation) {
             case 1:
@@ -46,7 +47,7 @@ int main()
             cin.ignore();
             inputStudent.setGrades(aux_grades);
 
-            cout << studentHandler.register_student(inputStudent);
+            studentHandler.register_student(inputStudent);
 
             break;
 
@@ -59,6 +60,13 @@ int main()
 
             case 3:
             studentHandler.list_students();
+            break;
+
+            case 4:
+            cout << "Enter student name: ";
+            getline(cin, aux_name);
+            inputStudent.setName(aux_name);
+            studentHandler.remove_student(inputStudent);
             break;
 
         }

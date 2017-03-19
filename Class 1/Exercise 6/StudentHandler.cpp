@@ -4,7 +4,6 @@ using namespace std;
 
 #define NUM_STUDENTS 20
 
-
 bool StudentHandler::register_student(Student student){
     int checkedID = student.getID();
     int empty_index = 0;
@@ -63,5 +62,28 @@ void StudentHandler::list_students(void){
         cout << "Student grade 1: " << students[i].getGrade(0) << endl;
         cout << "Student grade 2: " << students[i].getGrade(1) << endl << endl << endl;
         i++;
+    }
+}
+
+bool StudentHandler::remove_student(Student student){
+    int studentMatchIndex;
+    bool studentMatchFlag;
+    for(int i = 0; i < NUM_STUDENTS; i++){
+        if(student.getName() == students[i].getName()) {
+            studentMatchFlag = true;
+            studentMatchIndex = i;
+        }
+    }
+
+    if(studentMatchFlag == true){
+        float defaultGrades[2] = {0};
+        students[studentMatchIndex].setName("empty");
+        students[studentMatchIndex].setID(0);
+        students[studentMatchIndex].setGrades(defaultGrades);
+        return true;
+    }
+    else{
+        cout << "Student not found" << endl << endl;
+        return false;
     }
 }

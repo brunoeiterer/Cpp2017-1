@@ -3,8 +3,10 @@
 
 #include "Student.h"
 
+#define NUM_STUDENTS 20
+
 class StudentHandler{
-    Student students[20];
+    Student students[NUM_STUDENTS];
     public:
     void show_student(Student student);
     bool register_student(Student student);
