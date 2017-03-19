@@ -1,7 +1,10 @@
 #include "Student.h"
 
 Student::Student(){
+    float defaultGrades[2] = {0};
     setName("empty");
+    setID(0);
+    setGrades(defaultGrades);
 }
 
 Student::~Student(){
