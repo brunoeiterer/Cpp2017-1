@@ -23,11 +23,14 @@ int main()
         }
     }
     */
-
-    Calendar calendar(23, 03, 2017);
-    int day, month, year;
-    calendar.readCalendar(day, month, year);
-    cout << setfill('0') << setw(2) << day << "/" << setfill('0') << setw(2) << month << "/" << setfill('0') << setw(4) << year;
+    Calendar calendar(23, 12, 2017);
+    while(1){
+        int day, month, year;
+        Sleep(1000);
+        calendar.advance();
+        calendar.readCalendar(day, month, year);
+        cout << setfill('0') << setw(2) << day << "/" << setfill('0') << setw(2) << month << "/" << setfill('0') << setw(4) << year << endl;
+    }
 
     return 0;
 }
