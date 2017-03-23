@@ -26,11 +26,12 @@ void Clock::advance(){
         if(min == 60){
             min = 0;
             hr++;
+            if(hr == 12){
+                is_pm = !is_pm;
+            }
             if(hr == 13){
                 hr = 1;
-                is_pm = !is_pm;
             }
         }
     }
-
 }
