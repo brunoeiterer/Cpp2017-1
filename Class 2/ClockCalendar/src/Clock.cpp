@@ -13,8 +13,8 @@ void Clock::setClock(int hr, int min, int sec, bool is_pm){
 
 void Clock::readClock(int& h, int& m, int& s, bool& pm){
     h = hr;
-    s = min;
-    m = sec;
+    m = min;
+    s = sec;
     pm = is_pm;
 }
 
