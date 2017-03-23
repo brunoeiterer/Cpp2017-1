@@ -1,9 +1,6 @@
 #ifndef CLOCK_H
 #define CLOCK_H
 
-#include <iostream>
-using namespace std;
-
 class Clock
 {
     protected:
