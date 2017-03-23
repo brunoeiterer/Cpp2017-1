@@ -3,6 +3,7 @@
 #include <iomanip>
 #include "Clock.h"
 #include "Calendar.h"
+#include "ClockCalendar.h"
 using namespace std;
 
 int main()
@@ -22,7 +23,6 @@ int main()
             cout << hour << ":" << minute << ":" << second << " AM" << endl;
         }
     }
-    */
     Calendar calendar(23, 12, 2017);
     while(1){
         int day, month, year;
@@ -31,6 +31,14 @@ int main()
         calendar.readCalendar(day, month, year);
         cout << setfill('0') << setw(2) << day << "/" << setfill('0') << setw(2) << month << "/" << setfill('0') << setw(4) << year << endl;
     }
+    */
+
+    ClockCalendar clockcalendar(31, 12, 2017, 11, 59, 50, true);
+    int second, minute, hour, day, month, year;
+    bool pm;
+    clockcalendar.readCalendar(day, month, year);
+    cout << setfill('0') << setw(2) << day << "/" << setfill('0') << setw(2) << month << "/" << setfill('0') << setw(4) << year << endl;
+
 
     return 0;
 }
