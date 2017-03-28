@@ -29,5 +29,8 @@
 *.app
 *.cbp
 
-# Text filese
+# Text files
 *.txt
+
+# Debug log files
+*.log
