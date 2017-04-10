@@ -33,6 +33,7 @@ class NodoAB {
 	NodoAB *esquerda;	// ponteiro para o elemento a esquerda do nodo
 	NodoAB *direita;	// ponteiro para o elemento a direita do nodo
 
+	NodoAB();
 	// construtor com parametros
 	NodoAB(int val, NodoAB *esq, NodoAB *dir);
 	// retorna o valor armazenado no nodo
