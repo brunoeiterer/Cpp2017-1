@@ -24,14 +24,12 @@
 class NodoAB {
 
 	int dado;		// valor armazenado no nodo
-   
+
    public:
 
 	NodoAB *esquerda;	// ponteiro para o elemento a esquerda do nodo
 	NodoAB *direita;	// ponteiro para o elemento a direita do nodo
 
-	// construtor sem parametros
-	NodoAB();
 	// construtor com parametros
 	NodoAB(int val, NodoAB *esq, NodoAB *dir);
 	// retorna o valor armazenado no nodo

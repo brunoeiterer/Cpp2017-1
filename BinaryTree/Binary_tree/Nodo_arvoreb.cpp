@@ -22,10 +22,8 @@
 
 #include "Nodo_arvoreb.h"
 
-NodoAB::NodoAB (){
-	esquerda = direita = 0;
-}
-NodoAB::NodoAB (int val, NodoAB *esq, NodoAB *dir){
+
+NodoAB::NodoAB(int val, NodoAB *esq, NodoAB *dir){
 	dado = val;
 	esquerda = esq;
 	direita = dir;

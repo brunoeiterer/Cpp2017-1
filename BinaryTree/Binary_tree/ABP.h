@@ -24,6 +24,7 @@
 */
 
 #include "Nodo_arvoreb.cpp"
+#define NULL 0
 
 class ABP{
 	NodoAB* raiz ;
