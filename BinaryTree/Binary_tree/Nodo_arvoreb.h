@@ -21,6 +21,9 @@
 
 */
 
+#ifndef NODOAB_H
+#define NODOAB_H
+
 class NodoAB {
 
 	int dado;		// valor armazenado no nodo
@@ -44,3 +47,4 @@ class NodoAB {
 	bool ehFolha();
 };
 
+#endif

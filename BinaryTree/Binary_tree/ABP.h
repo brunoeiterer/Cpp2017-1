@@ -23,11 +23,13 @@
 
 */
 
-#include "Nodo_arvoreb.cpp"
+#include "Nodo_arvoreb.h"
 #define NULL 0
 
 class ABP{
+
 	NodoAB* raiz ;
+
 	void auxApagaABP (NodoAB*);
 	void auxInserir (NodoAB *&, int) ;
 	void auxRemoverNodo (NodoAB *&, int) ;
