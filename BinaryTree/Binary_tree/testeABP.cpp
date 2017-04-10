@@ -1,22 +1,19 @@
-
-
-#include "ABP.h"
-
-#include <iostream>
+#include <iostream>;
+#include "ABP.h";
 
 using namespace std;
 
-main(){
+int main(){
 
-	ABP r;
-/*
-	r.imprimirABP();
-	r.inserirNodo(10);
-	r.inserirNodo(20);
-	r.inserirNodo(5);
-	r.inserirNodo(15);
+	ABP* r = new ABP();
+
+	r->imprimirABP();
+	r->inserirNodo(10);
+	r->inserirNodo(20);
+	r->inserirNodo(5);
+	r->inserirNodo(15);
 	cout << "Escreve ABP..." << endl;
-	r.imprimirABP();
+	r->imprimirABP();
 
 	ABP* rptr = new ABP();
 
@@ -26,6 +23,6 @@ main(){
 	rptr->inserirNodo(15);
 	std::cout << "Novamente..." << endl;
 	rptr->imprimirABP();
-*/
+
 }
 

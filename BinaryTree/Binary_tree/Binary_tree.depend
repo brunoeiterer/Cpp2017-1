@@ -2,7 +2,7 @@
 1491785144 source:d:\documents\git-repos\cpp2017-1\binarytree\binary_tree\abp.cpp
 	"ABP.h"
 
-1491786863 d:\documents\git-repos\cpp2017-1\binarytree\binary_tree\abp.h
+1491786919 d:\documents\git-repos\cpp2017-1\binarytree\binary_tree\abp.h
 	"Nodo_arvoreb.h"
 
 1491786299 d:\documents\git-repos\cpp2017-1\binarytree\binary_tree\nodo_arvoreb.cpp
@@ -13,7 +13,7 @@
 1491786299 source:d:\documents\git-repos\cpp2017-1\binarytree\binary_tree\nodo_arvoreb.cpp
 	"Nodo_arvoreb.h"
 
-1491786198 source:d:\documents\git-repos\cpp2017-1\binarytree\binary_tree\testeabp.cpp
-	"ABP.h"
+1491787241 source:d:\documents\git-repos\cpp2017-1\binarytree\binary_tree\testeabp.cpp
 	<iostream>
+	"ABP.h"
 
