@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1491945798 source:c:\users\aluno\desktop\cpp2017-1\template_shape3d\cbox.cpp
+	"CBox.h"
+
+1491947479 c:\users\aluno\desktop\cpp2017-1\template_shape3d\cbox.h
+	"Cshape3d.h"
+
+1491947891 c:\users\aluno\desktop\cpp2017-1\template_shape3d\cshape3d.h
+
+1491946126 source:c:\users\aluno\desktop\cpp2017-1\template_shape3d\ccone.cpp
+	"CCone.h"
+
+1491947840 c:\users\aluno\desktop\cpp2017-1\template_shape3d\ccone.h
+	"Cshape3d.h"
+
+1491946133 source:c:\users\aluno\desktop\cpp2017-1\template_shape3d\ccylinder.cpp
+	"CCylinder.h"
+
+1491947930 c:\users\aluno\desktop\cpp2017-1\template_shape3d\ccylinder.h
+	"Cshape3d.h"
+
+1491945638 source:c:\users\aluno\desktop\cpp2017-1\template_shape3d\cshape3d.cpp
+	"Cshape3d.h"
+
+1491947503 source:c:\users\aluno\desktop\cpp2017-1\template_shape3d\testcshape3d.cpp
+	"CShape3d.h"
+	"CBox.h"
+	"CCone.h"
+	"CCylinder.h"
+	<iostream>
+
