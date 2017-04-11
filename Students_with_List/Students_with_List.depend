@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1491953239 source:c:\users\aluno\desktop\cpp2017-1\students_with_list\list.cpp
+	"List.h"
+
+1491953559 c:\users\aluno\desktop\cpp2017-1\students_with_list\list.h
+	"Node.h"
+	<iostream>
+
+1491950377 c:\users\aluno\desktop\cpp2017-1\students_with_list\node.h
+	"Student.h"
+
+1491943170 c:\users\aluno\desktop\cpp2017-1\students_with_list\student.h
+	<string>
+
+1491950433 source:c:\users\aluno\desktop\cpp2017-1\students_with_list\node.cpp
+	"Node.h"
+
+1491943170 source:c:\users\aluno\desktop\cpp2017-1\students_with_list\student.cpp
+	"Student.h"
+
+1491943170 source:c:\users\aluno\desktop\cpp2017-1\students_with_list\main.cpp
+	"Student.h"
+	"StudentHandler.h"
+	<iostream>
+
+1491952506 c:\users\aluno\desktop\cpp2017-1\students_with_list\studenthandler.h
+	"Student.h"
+	"List.h"
+
